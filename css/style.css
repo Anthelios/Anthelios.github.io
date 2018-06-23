@@ -106,7 +106,8 @@ header{
 	vertical-align: middle;
 }
 .logo img{
-	max-width: 300px;
+	width: 300px;
+	max-width: 100%;
 }
 nav ul{
 	display: inline-block;
@@ -703,11 +704,17 @@ footer .developed-by a{
 	}
     .hamburger{
     	display: inline-block;
-    	margin: 0 40px 0 20px;
+    	margin-right: 10px;
     }
 }
 @media screen and (max-width: 512px){
 	input, textarea {
     	padding: 10px 5px;
+	}
+	.logo{
+		width: -webkit-calc(100% - 45px);
+		width: -moz-calc(100% - 45px);
+		width: -o-calc(100% - 45px);
+		width: calc(100% - 45px);
 	}
 }
