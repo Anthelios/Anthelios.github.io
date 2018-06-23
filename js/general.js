@@ -44,5 +44,10 @@ $(function(){
 	  		outputFormat: 'DD/MM/YYYY'
 		});	
 	});
+	$('.hamburger').click(function(){			
+		$(this).find('.toggle').toggleClass('active');
+		$('aside').toggleClass('active');
+		$('body').toggleClass('aside-open');
+	});
 });
 
