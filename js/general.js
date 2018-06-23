@@ -40,7 +40,8 @@ $(function(){
 		var materialPicker001 = new MaterialDatepicker(this, {
 	  		weekBegin: 'monday',
 	  		color: "#f57c00",
-	  		lang: "es"
+	  		lang: "es",
+	  		outputFormat: 'DD/MM/YYYY'
 		});	
 	});
 });
