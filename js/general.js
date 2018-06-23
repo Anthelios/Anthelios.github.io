@@ -33,5 +33,8 @@ $(function(){
 	$('input[name=bus-type]').click(function(){
 		$('.personal-info').show();
 	});
+	$('.alert-close').click(function(){
+		$(this).parent('.alert').remove();
+	});
 });
 

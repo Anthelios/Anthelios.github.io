@@ -259,7 +259,6 @@ nav>ul>li{
 		border: none;
 		color: #fff;
 		border-radius: 15px;
-		box-shadow: 0 2px 4px rgba(241, 39, 17,0.5);
 		margin-top: 20px;
 		outline: none;
 		background-color: #ddd;
@@ -269,6 +268,7 @@ nav>ul>li{
 		box-shadow: none;
 	}
 	.btn-primary{
+		box-shadow: 0 2px 4px rgba(241, 39, 17,0.5);
 		background: #f83600;
 		background: -webkit-linear-gradient(to right, #fe8c00, #f83600); 
 		background: linear-gradient(to right, #fe8c00, #f83600);
@@ -336,6 +336,32 @@ nav>ul>li{
 	}
 	.checkbox input[type="checkbox"]:checked + span{
 		background-color: #714176;
+	}
+	/* ALERTS */
+	.alert{
+		padding: 30px 20px;
+		background-color: #ddd;
+		color: #757575;
+		border-radius: 2px;
+		position: relative;
+	}
+	.alert-close{
+		position: absolute;
+		right: 4px;
+		top: 6px;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+		cursor: pointer;
+	}
+	.alert-primary{
+		color: #fff;
+		background: #f83600;
+		background: -webkit-linear-gradient(to right, #fe8c00, #f83600); 
+		background: linear-gradient(to right, #fe8c00, #f83600);
+		box-shadow: 0 2px 4px rgba(241, 39, 17,0.5);
 	}
 
 /* MAIN */
