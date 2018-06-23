@@ -213,6 +213,7 @@ nav>ul>li{
 		font-family: 'Nunito Sans Regular';
 		transition: box-shadow 0.2s ease;
 		box-sizing: border-box;
+		border-radius: 2px;
 	}
 	input:focus, textarea:focus{
 		box-shadow: 0 1px 6px rgba(241, 39, 17,0.5);
@@ -382,6 +383,12 @@ nav>ul>li{
 .form-general, .form-type, .personal-info{
 	display: none;
 }
+#form-container h3{
+	font-size: 16px;
+	color: #714176;
+	font-weight: bold;
+	margin-bottom: 0;
+}
 /* FOOTER */
 footer{
 	background-color: #212121;
@@ -454,5 +461,10 @@ footer .developed-by a{
 	}
 	#services{
 		background-position: 0 bottom;
+	}
+}
+@media screen and (max-width: 512px){
+	input, textarea {
+    	padding: 10px 5px;
 	}
 }
