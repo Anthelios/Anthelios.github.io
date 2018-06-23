@@ -36,5 +36,12 @@ $(function(){
 	$('.alert-close').click(function(){
 		$(this).parent('.alert').remove();
 	});
+	$('.input-date').each(function(i) {
+		var materialPicker001 = new MaterialDatepicker(this, {
+	  		weekBegin: 'monday',
+	  		color: "#f57c00",
+	  		lang: "es"
+		});	
+	});
 });
 
