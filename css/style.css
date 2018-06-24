@@ -222,7 +222,7 @@ nav>ul>li{
 		animation: FadeIn 0.2s ease 1;
 	}
 	/* INPUTS */
-	input, textarea{
+	input, textarea, select{
 		padding: 10px 14px;
 		line-height: 14px;
 		display: block;
@@ -246,6 +246,10 @@ nav>ul>li{
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
+		height: 34px;
+	}
+	select{
+		padding: 0 14px;
 	}
 	input:focus, textarea:focus{
 		-webkit-box-shadow: 0 1px 6px rgba(241, 39, 17,0.5);
@@ -470,6 +474,11 @@ nav>ul>li{
 			position: relative;
 			z-index: 1;
 			cursor: pointer;
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    outline: none;
 		}
 		aside ul li:last-child{
 			border-top: 1px solid rgba(0,0,0,0.15);
@@ -567,9 +576,9 @@ nav>ul>li{
 	background-size: auto 400px;
 }
 #services .container, #privileges .container{
-	-webkit-box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4)
-	-moz-box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4)
-	box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4)
+	-webkit-box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4);
+	box-shadow: 0px 50px 70px -80px rgba(0,0,0,0.4);
 }
 .detail	li{
 	margin-bottom: 5px;
@@ -615,6 +624,36 @@ nav>ul>li{
 	font-weight: bold;
 	margin-bottom: 0;
 }
+.job-offers li{
+	padding: 10px 20px;
+	color: #714176;
+	font-weight: bold;
+	border-top: 1px solid rgba(0,0,0,0.15);
+	background-color: #f4f7f9;
+	-webkit-transition: background-color 0.2s ease;
+	-moz-transition: background-color 0.2s ease;
+	-o-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease; 
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.job-offers li:last-child{
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.job-offers li:hover{
+	background-color: #fff;
+}
+/*.job-offers li span{
+	float: right;
+	width: 70px;
+	text-align: center;
+	color: #f57c00;
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: lighter;
+}*/
 /* FOOTER */
 footer{
 	background-color: #212121;
@@ -646,6 +685,16 @@ footer .developed-by{
 	color: #aaa;
 	margin-top: 10px;
 	font-size: 12px;
+}
+footer a{
+	color: #aaa !important;
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+}
+footer a:hover{
+	color: #fff !important;
 }
 footer .developed-by a{
 	color: #fff;
