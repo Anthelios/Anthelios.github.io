@@ -679,6 +679,7 @@ nav>ul>li{
 	-o-transition: filter 0.2s ease;
 	transition: filter 0.2s ease;
 	margin-bottom: 15px;
+	overflow: hidden;
 }
 .news-item::before{
 	content: '';
