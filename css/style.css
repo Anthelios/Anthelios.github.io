@@ -302,6 +302,15 @@ nav>ul>li{
 		width: calc(20% - 6px);
 		text-align: center;
 	}
+	input[type=file]{
+		display: none;
+	}
+	.input-file, .input-file-name{
+		display: block;
+	}
+	.input-file-name{
+		color: #757575;
+	}
 	/* BUTTONS */
 	button{
 		cursor: pointer;
@@ -640,6 +649,13 @@ nav>ul>li{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+.job-offers li::before{
+	content: "\f0da";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-right: 10px;
+	margin-left: -10px;
 }
 .job-offers li:last-child{
 	border-bottom: 1px solid rgba(0,0,0,0.15);
