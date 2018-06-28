@@ -354,7 +354,7 @@ nav>ul>li{
 	}
 	.radio-button label>div{
 		position: absolute;
-		bottom: 20px;
+		bottom: 10px;
 		width: 100%;
 		text-align: center;
 	}
@@ -364,7 +364,7 @@ nav>ul>li{
 	.radio-button input[type="radio"] + span{
 		display: none;
 		position: absolute;
-		background-color: rgba(0,0,0,0.05);
+		background-color: rgba(0,0,0,0.025);
 		z-index: -1;
 		top: 0;
 		left: 0;
@@ -373,6 +373,69 @@ nav>ul>li{
 	}
 	.radio-button input[type="radio"]:checked + span{
 		display: block;
+	}
+	.service-type-1{
+		background-image: url('../img/solo_ida.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.service-type-2{
+		background-image: url('../img/ida_y_vuelta.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.service-type-3{
+		background-image: url('../img/excursion.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.service-type-4{
+		background-image: url('../img/programa.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.bus-type-1{
+		background-image: url('../img/standard.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.bus-type-2{
+		background-image: url('../img/de_lujo.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
+	}
+	.bus-type-3{
+		background-image: url('../img/goldline.png');		
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: 200px auto;
+		-moz-background-size: 200px auto;
+		-o-background-size: 200px auto;
+		background-size: 200px auto;
 	}
 	/* CHECKBOX */
 	.checkbox label{
