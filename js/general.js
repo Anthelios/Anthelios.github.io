@@ -7,6 +7,8 @@ $(function(){
 	StaticAlert();
 	SideNav();
 	Gallery();	
+	Slider();
+	SliderLogos();
 });
 
 function CustomInputFile(){
@@ -152,4 +154,53 @@ function GalleryNextImage(direccion){
         $('.gallery-current-img img').animate({opacity: '1'}, 200);
     });
 	
+}
+
+function Slider(){
+	var slider_imgs = $('.slider').find('.slider-img');
+	var position = 1;
+	next_image = slider_imgs[position];
+	setInterval(function(){
+		$(slider_imgs).fadeOut();
+		if(position+1 == slider_imgs.length){
+			position = 0;
+		}else{
+			position = position+1;
+		}	
+		$(next_image).fadeIn();
+		next_image = slider_imgs[position];
+	}, 3000);
+}
+
+function SliderLogos(){
+	$('.clients-logos').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1000,
+		speed: 1600,
+		centerMode: true,
+			centerPadding: '60px',
+			responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 2
+	      }
+	    }
+	  ]
+	});
 }
